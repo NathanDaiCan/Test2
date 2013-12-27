@@ -71,7 +71,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     NSInteger result = 0;
     if ([tableView isEqual:self.myTableView]){
-        result=10;
+        result=self.allRows.count;
         }
     return result;
 }
